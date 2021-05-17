@@ -66,7 +66,7 @@ class Student
     sql = <<-SQL
       SELECT * 
       FROM students
-      WITH grade = 
+      WITH grade = 9
       SQL
   end
 end

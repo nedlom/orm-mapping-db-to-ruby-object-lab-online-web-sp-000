@@ -50,6 +50,10 @@ class Student
   end
   
   def self.find_by_name(name)
-    sql =<<-
+    sql = <<-SQL
+      SELECT * 
+      FROM students
+      WITH name = ?
+      SQL
   end
 end
